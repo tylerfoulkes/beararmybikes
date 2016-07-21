@@ -7,3 +7,5 @@ $("#sidebar_icon").click(function() {
 });
 //document.querySelector(".searchform input").placeholder = "Search";
     
+// adds placeholder text to search box
+$("#s").attr("placeholder", "search");
