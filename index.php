@@ -9,7 +9,7 @@
 					<?php the_content(); ?>
 				</li>
 			<?php } // end while
-			} // end if
+			} // end if test commit
 		?>
 	</ul>
 </div>
