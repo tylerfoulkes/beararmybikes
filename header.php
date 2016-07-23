@@ -2,7 +2,13 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width">
-		<title><?php wp_title( '|', true, 'right' );  echo get_bloginfo( 'name' ); ?></title>
+		<title>
+			<?php 
+				bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title('');
+				// wp_title( '|', true, 'right' );  echo get_bloginfo( 'name' ); 
+			?>
+		</title>
+
 		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 		<link href="<?php bloginfo('template_directory')?>/style.css" media="all" type="text/css" rel="stylesheet">
 		<?php wp_head(); ?>
