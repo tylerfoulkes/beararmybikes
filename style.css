@@ -196,6 +196,7 @@ body.custom-background {
 	width: 100%;
 	overflow-y: scroll;
 	position: fixed;
+	-webkit-overflow-scrolling: touch;
 }
 
 #about {
